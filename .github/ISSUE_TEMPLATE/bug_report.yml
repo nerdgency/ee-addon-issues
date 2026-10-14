@@ -1,0 +1,70 @@
+name: Bug report
+description: Something in Formidable doesn't work the way it should.
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are public, so leave out submissions, visitors' answers, API keys, credentials and your config.php.
+        **Security problems go to security@nerdgency.ca, not here.**
+  - type: input
+    id: formidable
+    attributes:
+      label: Formidable version
+      description: At the bottom of Formidable's dashboard.
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ee
+    attributes:
+      label: ExpressionEngine version
+      placeholder: "7.5.x"
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+      placeholder: "8.3"
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step by step, so someone else can make it happen again.
+      placeholder: |
+        1. Create a form with...
+        2. Submit it with...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: tag
+    attributes:
+      label: Template tag
+      description: The tag as written, with every parameter, if the problem is on the front end.
+      render: html
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: What Formidable said
+      description: Output from debug="on", any `<!-- formidable: … -->` comment in the page source, and anything in the Developer Log or Workflow Log.
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, other add-ons involved, or anything you've already tried.

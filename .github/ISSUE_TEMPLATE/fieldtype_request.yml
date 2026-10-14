@@ -1,0 +1,35 @@
+name: Fieldtype request
+description: A new kind of field for Formidable.
+labels: ["enhancement", "fieldtype"]
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Fieldtype
+      placeholder: "e.g. Address lookup, Star rating, Payment"
+    validations:
+      required: true
+  - type: textarea
+    id: visitor
+    attributes:
+      label: What a visitor sees and does
+      description: The control, and what they pick, type or upload.
+    validations:
+      required: true
+  - type: textarea
+    id: stored
+    attributes:
+      label: What gets stored
+      description: The answer, and how it should look in the control panel, exports, emails and the API.
+    validations:
+      required: true
+  - type: textarea
+    id: service
+    attributes:
+      label: Services it depends on
+      description: An address lookup, a payment provider, a map service... if any.
+  - type: textarea
+    id: example
+    attributes:
+      label: An example
+      description: A link to the field on another site, or a screenshot.

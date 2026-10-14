@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Report a security vulnerability
+    url: https://nerdgency.ca/docs/formidable/getting-started/support#reporting-a-security-vulnerability
+    about: Please don't open a public issue. Email security@nerdgency.ca instead.
+  - name: Documentation and troubleshooting
+    url: https://nerdgency.ca/docs/formidable/getting-started/troubleshooting
+    about: Most problems have an answer here, and debug="on" usually says what's wrong.
