@@ -6,6 +6,7 @@ This is where to report bugs and ask for features in **Nerdgency's ExpressionEng
 | --- | --- | --- | --- |
 | **[Formidable](https://nerdgency.ca/docs/formidable)** | Forms for ExpressionEngine | [Docs](https://nerdgency.ca/docs/formidable) | [Open issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue+is%3Aopen+label%3Aformidable) |
 | **[Autograph](https://nerdgency.ca/docs/autograph)** | Signatures for ExpressionEngine | [Docs](https://nerdgency.ca/docs/autograph) | [Open issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue+is%3Aopen+label%3Aautograph) |
+| **[Vitesse](https://nerdgency.ca/docs/vitesse)** | Vite for ExpressionEngine | [Docs](https://nerdgency.ca/docs/vitesse) | [Open issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue+is%3Aopen+label%3Avitesse) |
 
 The add-ons' source isn't public. This repository holds only their issues. Each issue is labelled with the add-on it's about, so you can [choose a form](https://github.com/nerdgency/ee-addon-issues/issues/new/choose) for the right one, and filter by its label.
 
@@ -32,6 +33,11 @@ The add-ons' source isn't public. This repository holds only their issues. Each 
 - **[Report a bug](https://github.com/nerdgency/ee-addon-issues/issues/new?template=autograph-bug-report.yml).** Include the Autograph, ExpressionEngine and PHP versions (Autograph's is on the Add-Ons screen), where it happens (a Channel Form, a member form, the control panel, Grid or Fluid), the field's Storage Method, the steps to reproduce it, and anything in the browser's console or the Developer Log.
 - **[Request a feature](https://github.com/nerdgency/ee-addon-issues/issues/new?template=autograph-feature-request.yml).** What you're collecting signatures for, and where Autograph gets in the way.
 
+## Vitesse
+
+- **[Report a bug](https://github.com/nerdgency/ee-addon-issues/issues/new?template=vitesse-bug-report.yml).** Include the Vitesse, ExpressionEngine, PHP and Vite versions, whether it happens with the dev server or after a build, the tag as written, your `vite.config.js`, and what the template debugger said.
+- **[Request a feature](https://github.com/nerdgency/ee-addon-issues/issues/new?template=vitesse-feature-request.yml).**
+
 ## Reporting a security vulnerability
 
 If you think you've found a security problem in any of the add-ons, **email [security@nerdgency.ca](mailto:security@nerdgency.ca)**. Don't open a public issue or share it anywhere else until a fix is released. The [security policy](SECURITY.md) says what to include and what happens next.
@@ -40,7 +46,7 @@ If you think you've found a security problem in any of the add-ons, **email [sec
 
 | Label | Meaning |
 | --- | --- |
-| `formidable`, `autograph` | The add-on an issue is about. Added by the issue forms. |
+| `formidable`, `autograph`, `vitesse` | The add-on an issue is about. Added by the issue forms. |
 | `bug` | Something doesn't work as documented. |
 | `enhancement` | A new feature, or a change to an existing one. |
 | `fieldtype` | A request for a new Formidable fieldtype. |

@@ -6,6 +6,9 @@ contact_links:
   - name: Formidable documentation and troubleshooting
     url: https://nerdgency.ca/docs/formidable/getting-started/troubleshooting
     about: Most problems have an answer here, and debug="on" usually says what's wrong.
+  - name: Vitesse documentation and troubleshooting
+    url: https://nerdgency.ca/docs/vitesse/getting-started/troubleshooting
+    about: Turn on Template Debugging first; Vitesse explains most problems there.
   - name: Autograph documentation and troubleshooting
     url: https://nerdgency.ca/docs/autograph/getting-started/troubleshooting
     about: The pad not appearing, signatures not saving, and known limitations.

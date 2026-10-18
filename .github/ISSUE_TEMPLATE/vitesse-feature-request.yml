@@ -1,0 +1,20 @@
+name: "Vitesse: feature request"
+description: An idea for Vitesse, or something it can't do yet.
+labels: ["vitesse", "enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Search the existing issues first. If your idea is already there, a 👍 helps decide what gets done first.
+  - type: textarea
+    id: problem
+    attributes:
+      label: The problem
+      description: What are you building, and where does Vitesse get in the way?
+    validations:
+      required: true
+  - type: textarea
+    id: solution
+    attributes:
+      label: What you'd like
+    validations:
+      required: true

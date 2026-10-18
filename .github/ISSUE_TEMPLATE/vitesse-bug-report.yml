@@ -1,0 +1,78 @@
+name: "Vitesse: bug report"
+description: Vitesse prints the wrong tags, or none.
+labels: ["vitesse", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Turn on Template Debugging first: Vitesse explains most problems there.
+        **Security problems go to security@nerdgency.ca, not here.**
+  - type: input
+    id: vitesse
+    attributes:
+      label: Vitesse version
+      placeholder: "1.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ee
+    attributes:
+      label: ExpressionEngine version
+      placeholder: "7.5.x"
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+      placeholder: "8.3"
+    validations:
+      required: true
+  - type: input
+    id: vite
+    attributes:
+      label: Vite version
+      placeholder: "5.4"
+    validations:
+      required: true
+  - type: dropdown
+    id: mode
+    attributes:
+      label: When it happens
+      options:
+        - While Vite's dev server runs
+        - After vite build
+        - Both
+    validations:
+      required: true
+  - type: textarea
+    id: tag
+    attributes:
+      label: The tag
+      description: As written, with every parameter.
+      render: html
+    validations:
+      required: true
+  - type: textarea
+    id: config
+    attributes:
+      label: vite.config.js
+      render: js
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What was printed instead
+      render: html
+    validations:
+      required: true
+  - type: textarea
+    id: debugger
+    attributes:
+      label: What the template debugger said
+      render: text

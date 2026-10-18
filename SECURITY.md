@@ -1,6 +1,6 @@
 # Security policy
 
-This policy covers all of Nerdgency's ExpressionEngine add-ons: **Formidable** and **Autograph**.
+This policy covers all of Nerdgency's ExpressionEngine add-ons: **Formidable**, **Autograph** and **Vitesse**.
 
 **Please don't report security vulnerabilities in public issues.**
 
@@ -19,6 +19,7 @@ We'll confirm we've received your report, keep you updated while we look into it
 | --- | --- |
 | Formidable | The latest 1.x release |
 | Autograph | The latest release of the current major version |
+| Vitesse | The latest 1.x release |
 
 ## Testing
 
