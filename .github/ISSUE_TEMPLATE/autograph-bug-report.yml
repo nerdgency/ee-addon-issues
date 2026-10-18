@@ -1,0 +1,94 @@
+name: "Autograph: bug report"
+description: Something in Autograph doesn't work the way it should.
+labels: ["autograph", "bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time. Issues are public, so leave out real signatures, entries, credentials and your config.php. Sign a test entry instead.
+        **Security problems go to security@nerdgency.ca, not here.**
+  - type: input
+    id: autograph
+    attributes:
+      label: Autograph version
+      description: On the Add-Ons screen.
+      placeholder: "2.0.0"
+    validations:
+      required: true
+  - type: input
+    id: ee
+    attributes:
+      label: ExpressionEngine version
+      placeholder: "7.5.x"
+    validations:
+      required: true
+  - type: input
+    id: php
+    attributes:
+      label: PHP version
+      placeholder: "8.3"
+    validations:
+      required: true
+  - type: dropdown
+    id: where
+    attributes:
+      label: Where it happens
+      multiple: true
+      options:
+        - Channel Form
+        - Member form (registration or edit profile)
+        - Control panel (publish form or member profile)
+        - Grid or Fluid
+        - Template output ({field}, :url, :signed_at…)
+        - Field settings
+        - Updating or installing
+    validations:
+      required: true
+  - type: dropdown
+    id: storage
+    attributes:
+      label: Storage Method
+      description: In the field's settings. 1.x fields are always in the entry.
+      options:
+        - In the entry
+        - As a file in an upload directory
+        - Not sure
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps to reproduce
+      description: Step by step, so someone else can make it happen again.
+      placeholder: |
+        1. Create an Autograph field with...
+        2. Sign it in a Channel Form and...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What you expected
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened instead
+    validations:
+      required: true
+  - type: textarea
+    id: template
+    attributes:
+      label: Template
+      description: The {exp:channel:form}, member form or {exp:channel:entries} tag as written, if the problem is on the front end.
+      render: html
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: What the browser and ExpressionEngine said
+      description: Anything in the browser's console, whether autograph.js loads, and anything in the Developer Log (Tools › Logs › Developer).
+      render: text
+  - type: textarea
+    id: extra
+    attributes:
+      label: Anything else
+      description: Screenshots, the browser and device, other add-ons involved, or anything you've already tried.

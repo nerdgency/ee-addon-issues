@@ -1,6 +1,6 @@
-name: Bug report
+name: "Formidable: bug report"
 description: Something in Formidable doesn't work the way it should.
-labels: ["bug"]
+labels: ["formidable", "bug"]
 body:
   - type: markdown
     attributes:
@@ -61,7 +61,7 @@ body:
     id: diagnostics
     attributes:
       label: What Formidable said
-      description: Output from debug="on", any `<!-- formidable: … -->` comment in the page source, and anything in the Developer Log or Workflow Log.
+      description: 'Output from debug="on", any `<!-- formidable: … -->` comment in the page source, and anything in the Developer Log or Workflow Log.'
       render: text
   - type: textarea
     id: extra

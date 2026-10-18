@@ -1,59 +1,50 @@
-# Formidable issues
+# Nerdgency add-on issues
 
-This is where to report bugs and ask for features in **[Formidable](https://nerdgency.ca/docs/formidable)**, the forms add-on for ExpressionEngine. New fieldtypes are welcome as requests too.
+This is where to report bugs and ask for features in **Nerdgency's ExpressionEngine add-ons**:
 
-Formidable's source isn't public. This repository holds only its issues.
+| Add-on | What it is | Docs | Issues |
+| --- | --- | --- | --- |
+| **[Formidable](https://nerdgency.ca/docs/formidable)** | Forms for ExpressionEngine | [Docs](https://nerdgency.ca/docs/formidable) | [Open issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue+is%3Aopen+label%3Aformidable) |
+| **[Autograph](https://nerdgency.ca/docs/autograph)** | Signatures for ExpressionEngine | [Docs](https://nerdgency.ca/docs/autograph) | [Open issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue+is%3Aopen+label%3Aautograph) |
+
+The add-ons' source isn't public. This repository holds only their issues. Each issue is labelled with the add-on it's about, so you can [choose a form](https://github.com/nerdgency/ee-addon-issues/issues/new/choose) for the right one, and filter by its label.
 
 > [!CAUTION]
-> **Found a security vulnerability? Don't open an issue.** Email **[security@nerdgency.ca](mailto:security@nerdgency.ca)** instead. See [Reporting a security vulnerability](#reporting-a-security-vulnerability).
+> **Found a security vulnerability? Don't open an issue.** Email **[security@nerdgency.ca](mailto:security@nerdgency.ca)** instead. See the [security policy](SECURITY.md).
 
 ## Before you open an issue
 
-1. **Check [Troubleshooting](https://nerdgency.ca/docs/formidable/getting-started/troubleshooting).** Adding `debug="on"` to the form tag usually says what's wrong.
-2. **Update** to the latest Formidable 1.x release. The [release notes](https://nerdgency.ca/docs/formidable/prologue/release-notes) say what's been fixed.
-3. **Search the [open and closed issues](https://github.com/nerdgency/ee-formidable-issues/issues?q=is%3Aissue).** If yours is already there, add a 👍 or a comment with your details instead of opening a new one. Upvotes help decide what gets done first.
-
-## Reporting a bug
-
-[Open a bug report](https://github.com/nerdgency/ee-formidable-issues/issues/new?template=bug_report.yml) and include:
-
-1. **Versions:** Formidable, ExpressionEngine and PHP. Formidable's version is at the bottom of its dashboard.
-2. **What you did,** step by step, so the problem can be reproduced.
-3. **What you expected,** and **what happened instead.**
-4. **The template tag as written,** with every parameter, if the problem is on the front end.
-5. **Anything Formidable told you:** what `debug="on"` said, any `<!-- formidable: … -->` comment in the page source, and anything in the Developer Log or the Workflow Log.
-6. **Screenshots,** if they help.
+1. **Check the add-on's troubleshooting page:** [Formidable](https://nerdgency.ca/docs/formidable/getting-started/troubleshooting) · [Autograph](https://nerdgency.ca/docs/autograph/getting-started/troubleshooting).
+2. **Update** to the add-on's latest release. Its changelog says what's been fixed: [Formidable](https://nerdgency.ca/docs/formidable/prologue/changelog) · [Autograph](https://nerdgency.ca/docs/autograph/prologue/changelog).
+3. **Search the [open and closed issues](https://github.com/nerdgency/ee-addon-issues/issues?q=is%3Aissue).** If yours is already there, add a 👍 or a comment with your details instead of opening a new one. Upvotes help decide what gets done first.
 
 > [!WARNING]
-> Issues are public. Leave out submissions, visitors' answers, API keys, Connection credentials, passwords and your `config.php`. Use made-up values instead. If the problem only happens with real data, say so and we'll arrange a private way to look at it.
+> Issues are public. Leave out submissions, visitors' answers, real signatures, API keys, credentials, passwords and your `config.php`. Use made-up values instead. If the problem only happens with real data, say so and we'll arrange a private way to look at it.
 
-## Requesting a feature
+## Formidable
 
-[Open a feature request](https://github.com/nerdgency/ee-formidable-issues/issues/new?template=feature_request.yml). Describe **the problem you're trying to solve**, not only the solution you have in mind: what the form is for, what you tried, and where Formidable got in the way.
+- **[Report a bug](https://github.com/nerdgency/ee-addon-issues/issues/new?template=formidable-bug-report.yml).** Include the Formidable, ExpressionEngine and PHP versions (Formidable's is at the bottom of its dashboard), the steps to reproduce it, what you expected and what happened instead, the template tag as written, and anything Formidable told you: what `debug="on"` said, any `<!-- formidable: … -->` comment in the page source, and anything in the Developer Log or the Workflow Log.
+- **[Request a feature](https://github.com/nerdgency/ee-addon-issues/issues/new?template=formidable-feature-request.yml).** Describe the problem you're trying to solve, not only the solution: what the form is for, what you tried, and where Formidable got in the way.
+- **[Request a fieldtype](https://github.com/nerdgency/ee-addon-issues/issues/new?template=formidable-fieldtype-request.yml).** What a visitor sees and does, what gets stored, any service it depends on, and an example. Want to build it yourself? See [Custom fieldtypes](https://nerdgency.ca/docs/formidable/extending/custom-fieldtypes).
 
-## Requesting a fieldtype
+## Autograph
 
-[Open a fieldtype request](https://github.com/nerdgency/ee-formidable-issues/issues/new?template=fieldtype_request.yml) and tell us:
-
-- **What a visitor sees and does:** the control, and what they pick, type or upload.
-- **What gets stored,** and how it should look in the control panel, exports, emails and the API.
-- **Any service it depends on,** such as an address lookup or a payment provider.
-- **An example** of the field on another site, if you have one.
-
-Want to build it yourself? See [Custom fieldtypes](https://nerdgency.ca/docs/formidable/extending/custom-fieldtypes).
+- **[Report a bug](https://github.com/nerdgency/ee-addon-issues/issues/new?template=autograph-bug-report.yml).** Include the Autograph, ExpressionEngine and PHP versions (Autograph's is on the Add-Ons screen), where it happens (a Channel Form, a member form, the control panel, Grid or Fluid), the field's Storage Method, the steps to reproduce it, and anything in the browser's console or the Developer Log.
+- **[Request a feature](https://github.com/nerdgency/ee-addon-issues/issues/new?template=autograph-feature-request.yml).** What you're collecting signatures for, and where Autograph gets in the way.
 
 ## Reporting a security vulnerability
 
-If you think you've found a security problem in Formidable, such as a way to bypass validation or spam protection, read submissions you shouldn't, run code, or reach the API without permission, **email [security@nerdgency.ca](mailto:security@nerdgency.ca)**. Don't open a public issue or share it anywhere else until a fix is released.
+If you think you've found a security problem in any of the add-ons, **email [security@nerdgency.ca](mailto:security@nerdgency.ca)**. Don't open a public issue or share it anywhere else until a fix is released. The [security policy](SECURITY.md) says what to include and what happens next.
 
-Include what the problem is and what an attacker could do with it, the steps to reproduce it, the Formidable, ExpressionEngine and PHP versions you tested, and anything that limits it (a setting that has to be on, a permission the attacker needs).
+## Labels
 
-We'll confirm we've received it, keep you updated, and release a fix as soon as we can. We're glad to credit you in the release notes, or to leave your name out if you prefer.
+| Label | Meaning |
+| --- | --- |
+| `formidable`, `autograph` | The add-on an issue is about. Added by the issue forms. |
+| `bug` | Something doesn't work as documented. |
+| `enhancement` | A new feature, or a change to an existing one. |
+| `fieldtype` | A request for a new Formidable fieldtype. |
 
-Please test only against your own installations, never against a site you don't own or have permission to test.
+## Formerly `ee-formidable-issues`
 
-## Links
-
-- [Documentation](https://nerdgency.ca/docs/formidable)
-- [Getting help](https://nerdgency.ca/docs/formidable/getting-started/support)
-- [Release notes](https://nerdgency.ca/docs/formidable/prologue/release-notes)
+This repository used to be Formidable's alone. Old links to `github.com/nerdgency/ee-formidable-issues` redirect here, and Formidable's issues are all still here, labelled `formidable`.

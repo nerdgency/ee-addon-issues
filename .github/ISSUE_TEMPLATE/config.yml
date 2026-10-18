@@ -1,8 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report a security vulnerability
-    url: https://nerdgency.ca/docs/formidable/getting-started/support#reporting-a-security-vulnerability
-    about: Please don't open a public issue. Email security@nerdgency.ca instead.
-  - name: Documentation and troubleshooting
+    url: https://github.com/nerdgency/ee-addon-issues/security/policy
+    about: Please don't open a public issue. Email security@nerdgency.ca instead, for any add-on.
+  - name: Formidable documentation and troubleshooting
     url: https://nerdgency.ca/docs/formidable/getting-started/troubleshooting
     about: Most problems have an answer here, and debug="on" usually says what's wrong.
+  - name: Autograph documentation and troubleshooting
+    url: https://nerdgency.ca/docs/autograph/getting-started/troubleshooting
+    about: The pad not appearing, signatures not saving, and known limitations.

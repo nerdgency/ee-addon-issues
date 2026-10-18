@@ -1,6 +1,6 @@
-name: Fieldtype request
+name: "Formidable: fieldtype request"
 description: A new kind of field for Formidable.
-labels: ["enhancement", "fieldtype"]
+labels: ["formidable", "enhancement", "fieldtype"]
 body:
   - type: input
     id: name
